@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>零基础html编码</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #b0b0b0;;
+        }
+        div{
+            margin-left: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:  red;
+        }
+        a:visited{
+            color: purple;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+            margin-top: 8px;
+        }
+        .title{
+            text-align: center;
+            border: 1px solid;
+            font-size: 14px;
+            width: 100%;
+            background: #363636;
+            height: 60px;
+        }
+        .title img{
+            width: 120px;
+            float: left;
+        }
+        .title div{
+            width: 35%;
+            height: 100%;
+        }
+        .title ul li{
+            margin-right: 20px;
+            float: left;
+        }
+        .title a{
+            color: aliceblue;
+        }
+        .title a:hover{
+            color: aqua;
+        }
+        .body1{
+            border: 1px solid;
+            margin: 20px;
+            padding: 35px 20px;
+            background: #fff;
+            box-shadow: 2px 2px 0 0 #000;
+        }
+        .body1 p a{
+            color: blue;
+        }
+        .body1 p a:hover{
+            color: red;
+        }
+        .body1 div img{
+            height: 100px;
+            width: 200px;
+        }
+        .ul1{
+            list-style: none;
+        }
+        .body1 .photo{
+            width: 150px;
+            height: 190px;
+            line-height: 1.2em;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid #363636;
+        }
+        table{
+            border:  #000 2px;
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 66%;
+            margin:auto;
+            border:#ccc 1px solid;
+        }
+        .table1 th{
+            color: #fff;
+            background: #000;
+        }
+        .table1 tr:last-child{
+            background: #b0b0b0;
+        }
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+            margin: 0 auto;
+        }
+        input{
+            color: initial;
+            text-align: start;
+            display: inline-block;
+            margin: 0em;
+        }
+        label{
+            font: bold;
+        }
+        .email label{
+            float: none;
+        }
+        .email p,.password p  {
+            color: #b0b0b0;
+            font-size: 14px;
+            margin-left: 130px;
+        }
+        .form1{
+            width: 60%;
+            margin: auto;
+        }
+        input[type="submit"]{
+            color: #fff;
+            font-size: 25px;
+            background: #205aa7;
+            width: 100%;
+            height: 80px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .leg{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <div class="left" style="margin:0 auto;">
+            <img src="https://dogidea.github.io/baiduife/img/log1.jpg">
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="http://www.baidu.com">导航链接一</a>
+                </li>
+                <li>
+                    <a href="http://www.qq.com">导航链接二</a>
+                </li>
+                <li>
+                    <a href="http://www.hao123.com">导航链接三</a>
+                </li>
+                <li>
+                    <a href="http://www.miaowei.com">导航链接四</a>    
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="body1">
+       <div class="h1">
+           <h1>网站一级标题</h1> 
+       </div>
+       <div>
+           <h2>文章一级标题</h2>
+       </div>
+       <div>
+            <p>
+                这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<strong>有个加粗字体</strong>这是一个很长很长的段落这是
+                一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>
+                这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落该换行了
+                <br>
+                很长很长的段落这是一个很很长很长的段落这是一个很很长很长的段落这是一个很很长很长的段落这是一个很很长很长的段落这是一个很是一个很很长很长是一个很很
+                长很长是一个很很长很长是一个很很长很长
+            </p>
+       </div>
+       <div class="img1">
+           <img src="https://dogidea.github.io/baiduife/img/task.png" alt="这是一张图片">
+       </div>
+       <div>
+        <p>
+            这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<strong>有个加粗字体</strong>这是一个很长很长的段落这是
+            一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>
+            这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落该换行了
+            <br>
+            很长很长的段落这是一个很很长很长的段落这是一个很很长很长的段落这是一个很很长很长的段落这是一个很很长很长的段落这是一个很是一个很很长很长是一个很很
+            长很长是一个很很长很长是一个很很长很长
+        </p>
+       </div>
+    </div>
+    <div class="body1">
+        <div class="h1">
+            <h2>文章一级标题</h2> 
+        </div>
+        <div>
+            <h3>文章二级标题</h3>
+        </div>
+        <div>
+             <p>
+                 这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<strong>有个加粗字体</strong>这是一个很长很长的段落这是
+                 一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>
+                 这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落该换行了
+                 <br>
+                 很长很长的段落这是一个很很长很长的段落这是一个很很长很长的段落这是一个很很长很长的段落这是一个很很长很长的段落这是一个很是一个很很长很长是一个很很
+                 长很长是一个很很长很长是一个很很长很长
+             </p>
+        </div>
+        <div class="img1">
+            <img src="https://dogidea.github.io/baiduife/img/task.png" alt="这是一张图片">
+        </div>
+        <div>
+            <ul class="ul1">
+                <li>列表一</li>
+                <li>列表二</li>
+                <li>列表三</li>
+                <li>列表四</li>
+                <li>列表五</li>
+            </ul>
+        </div>
+    </div>
+    <div class="body1">
+        <div>
+            <h1>图片</h1>
+        </div>
+        <div class="photo">
+            <p>图片图片图片</p>
+            <img src="https://dogidea.github.io/baiduife/img/task.png" style="width:120px;height:120px;" alt="我是一张图片啊">
+        </div>
+        <div class="photo">
+            <p>图片图片图片</p>
+            <img src="https://dogidea.github.io/baiduife/img/task.png" style="width:120px;height:120px;" alt="我是一张图片啊">
+        </div>
+        <div class="photo">
+            <p>图片图片图片</p>
+            <img src="https://dogidea.github.io/baiduife/img/task.png" style="width:120px;height:120px;" alt="我是一张图片啊">
+        </div>
+        <div class="photo">
+            <p>图片图片图片</p>
+            <img src="https://dogidea.github.io/baiduife/img/task.png" style="width:120px;height:120px;" alt="我是一张图片啊">
+        </div>
+        <div class="photo">
+            <p>图片图片图片</p>
+            <img src="https://dogidea.github.io/baiduife/img/task.png" style="width:120px;height:120px;" alt="我是一张图片啊">
+        </div>
+        <div class="photo">
+            <p>图片图片图片</p>
+            <img src="https://dogidea.github.io/baiduife/img/task.png" style="width:120px;height:120px;" alt="我是一张图片啊">
+        </div>
+    </div>
+    <div class="body1">
+        <div>
+            <h1>最后一级标题</h1>
+        </div>
+        <div>
+            <h2>文章二级标题</h2>
+        </div>
+        <div>
+            <ol>
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+                <li>排名4</li>
+                <li>排名5</li>
+            </ol>
+        </div>
+        <div class="table1">
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <th>表头</th>
+                        <th>表头</th>
+                        <th>表头</th>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>总计：</td>
+                        <td colspan="2">1000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="import">
+            <h2></h2>
+        </div>
+    </div>
+    <div class="body1">
+        <div class="lastmenu">
+            <h1>侧栏侧栏侧栏侧栏侧栏标题</h1>
+        </div>
+        <div class="form1">
+            <form action="http://www.baidu.com">
+                <table>
+                    <tbody>
+                        <div class="email">
+                            <label for="input1">请输入邮箱地址:&nbsp;</label>
+                            <input id="input1" type="text" placeholder="请输入邮箱地址！" >
+                            <p>邮箱地址请按要求格式输入</p>
+                        </div>
+                        <div class="password">
+                            <label for="input2">请输入密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input id="input2" type="password" placeholder="请输入密码！">
+                            <br>
+                            <label for="input2">请重复输入密码:&nbsp;</label>
+                            <input id="input2" type="password" placeholder="请重复输入密码！">
+                            <p>密码请为6~16位英文数字</p>
+                        </div>
+                        <div class="sex">
+                            <label>性别:&nbsp;</label>
+                            <input type="radio" name="sex" value="男" checked>男
+                            <input type="radio" name="sex" value="女">女
+                        </div>
+                        <br>
+                        <div class="city">
+                            <label>城市:&nbsp;</label>
+                            <select name="city" id="city">
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                                <option value="广州">广州</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="hobby">
+                            <label>爱好:&nbsp;</label>
+                            <input type="checkbox" value="运动">运动
+                            <input type="checkbox" value="艺术">艺术
+                            <input type="checkbox" value="科学">科学
+                        </div>
+                        <br>
+                        <div class="description">
+                            <label>个人描述:</label>
+                            <textarea name="description" id="description" cols="40" rows="10"></textarea>
+                        </div>
+                    </tbody>
+                </table>
+                <input type="submit" value="提交按钮">
+            </form>
+        </div>
+    </div>
+    <div class="leg">
+        <p>版权所有@</p>
+    </div>
+</body>
+</html>
