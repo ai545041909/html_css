@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: #ccc;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%)
+        }
+        .one{
+            top: 0;
+            left: 0;
+            border-radius: 0 0 50px 0;
+        }
+        .two{
+            bottom: 0;
+            right: 0;
+            border-radius: 50px 0 0 0;
+        }
+        .one, .two{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: #fc0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>
