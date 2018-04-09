@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>零基础html编码</title>
     <style>
-        body{
+        *{
             margin: 0;
             padding: 0;
-            background: #b0b0b0;;
-        }
-        div{
-            margin-left: 10px;
+           
+        } 
+        body{
+           background: #dedede; 
         }
         a{
             text-decoration: none;
@@ -21,60 +21,64 @@
         a:visited{
             color: purple;
         }
-        .left{
-            float: left;
-        }
-        .right{
-            float: right;
-            margin-top: 8px;
-        }
-        .title{
-            text-align: center;
-            border: 1px solid;
-            font-size: 14px;
-            width: 100%;
+
+        .nav{
             background: #363636;
-            height: 60px;
         }
-        .title img{
-            width: 120px;
+        .clearfix::after{
+            display: block;
+            visibility: hidden;
+            clear: both;
+            height: 0;
+            content: ".";
+        }
+        .clearfix{
+            zoom: 1;
+        }
+        
+        .logo{
+            height: 60px;
+            width: 100px;
             float: left;
         }
-        .title div{
-            width: 35%;
+        
+        .nav_ul{
+            float: right;
             height: 100%;
         }
-        .title ul li{
-            margin-right: 20px;
+        .nav_ul li{
             float: left;
+            line-height: 60px;
+            margin-left: 15px;
+            margin-right: 15px;
         }
-        .title a{
-            color: aliceblue;
+        .nav a{
+            color: #fff;
         }
-        .title a:hover{
+        .nav a:hover{
             color: aqua;
         }
-        .body1{
+        .content{
             border: 1px solid;
             margin: 20px;
             padding: 35px 20px;
             background: #fff;
             box-shadow: 2px 2px 0 0 #000;
         }
-        .body1 p a{
+        .content p a{
             color: blue;
         }
-        .body1 p a:hover{
+        .content p a:hover{
             color: red;
         }
-        .body1 div img{
+        .img{
             height: 100px;
             width: 200px;
         }
-        .ul1{
-            list-style: none;
+        .list{
+            margin-left: 30px;
         }
-        .body1 .photo{
+        .photo{
             width: 150px;
             height: 190px;
             line-height: 1.2em;
@@ -82,23 +86,26 @@
             text-align: center;
             border: 1px solid #363636;
         }
-        table{
+        .list_rank{
+            margin-left: 30px;
+        }
+        .table{
+            
             border:  #000 2px;
             border-collapse: collapse;
             table-layout: fixed;
-            width: 66%;
+            width: 100%;
             margin:auto;
             border:#ccc 1px solid;
         }
-        .table1 th{
+        .table th{
             color: #fff;
             background: #000;
         }
-        .table1 tr:last-child{
+        .table tr:last-child{
             background: #b0b0b0;
         }
         tbody {
-            display: table-row-group;
             vertical-align: middle;
             border-color: inherit;
             margin: 0 auto;
@@ -106,7 +113,6 @@
         input{
             color: initial;
             text-align: start;
-            display: inline-block;
             margin: 0em;
         }
         label{
@@ -121,16 +127,22 @@
             margin-left: 130px;
         }
         .form1{
-            width: 60%;
+            width: 100%;
             margin: auto;
+            text-align: center;
+            margin-left: -100px;
         }
-        input[type="submit"]{
+        .description{
+            margin-left: 500px;
+        }
+        .input{
             color: #fff;
             font-size: 25px;
             background: #205aa7;
             width: 100%;
-            height: 80px;
+            height: 40px;
             margin: 0 auto;
+            margin-left: 100px;
             text-align: center;
         }
         .leg{
@@ -140,12 +152,9 @@
     </style>
 </head>
 <body>
-    <div class="title">
-        <div class="left" style="margin:0 auto;">
-            <img src="https://dogidea.github.io/baiduife/img/log1.jpg">
-        </div>
-        <div class="right">
-            <ul>
+    <header class="nav clearfix">
+            <img class="logo" src="https://dogidea.github.io/baiduife/img/log1.jpg">
+            <ul class="nav_ul">
                 <li>
                     <a href="http://www.baidu.com">导航链接一</a>
                 </li>
@@ -159,10 +168,9 @@
                     <a href="http://www.miaowei.com">导航链接四</a>    
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="body1">
-       <div class="h1">
+    </header>
+    <div class="content">
+       <div class="title">
            <h1>网站一级标题</h1> 
        </div>
        <div>
@@ -178,9 +186,7 @@
                 长很长是一个很很长很长是一个很很长很长
             </p>
        </div>
-       <div class="img1">
-           <img src="https://dogidea.github.io/baiduife/img/task.png" alt="这是一张图片">
-       </div>
+           <img class="img" src="https://dogidea.github.io/baiduife/img/task.png" alt="这是一张图片">
        <div>
         <p>
             这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<strong>有个加粗字体</strong>这是一个很长很长的段落这是
@@ -192,8 +198,8 @@
         </p>
        </div>
     </div>
-    <div class="body1">
-        <div class="h1">
+    <div class="content">
+        <div class="title">
             <h2>文章一级标题</h2> 
         </div>
         <div>
@@ -209,20 +215,16 @@
                  长很长是一个很很长很长是一个很很长很长
              </p>
         </div>
-        <div class="img1">
-            <img src="https://dogidea.github.io/baiduife/img/task.png" alt="这是一张图片">
-        </div>
-        <div>
-            <ul class="ul1">
+            <img class="img" src="https://dogidea.github.io/baiduife/img/task.png" alt="这是一张图片">
+            <ul class="list">
                 <li>列表一</li>
                 <li>列表二</li>
                 <li>列表三</li>
                 <li>列表四</li>
                 <li>列表五</li>
             </ul>
-        </div>
     </div>
-    <div class="body1">
+    <div class="content">
         <div>
             <h1>图片</h1>
         </div>
@@ -251,62 +253,66 @@
             <img src="https://dogidea.github.io/baiduife/img/task.png" style="width:120px;height:120px;" alt="我是一张图片啊">
         </div>
     </div>
-    <div class="body1">
+    <div class="content">
         <div>
             <h1>最后一级标题</h1>
         </div>
         <div>
             <h2>文章二级标题</h2>
         </div>
-        <div>
-            <ol>
+            <ol class="list_rank">
                 <li>排名1</li>
                 <li>排名2</li>
                 <li>排名3</li>
                 <li>排名4</li>
                 <li>排名5</li>
             </ol>
-        </div>
-        <div class="table1">
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <th>表头</th>
-                        <th>表头</th>
-                        <th>表头</th>
-                    </tr>
-                    <tr>
-                        <td>表内容单元格</td>
-                        <td>表内容单元格</td>
-                        <td><a href="#">操作</a></td>
-                    </tr>
-                    <tr>
-                        <td>表内容单元格</td>
-                        <td>表内容单元格</td>
-                        <td><a href="#">操作</a></td>
-                    </tr>
-                    <tr>
-                        <td>表内容单元格</td>
-                        <td>表内容单元格</td>
-                        <td><a href="#">操作</a></td>
-                    </tr>
-                    <tr>
-                        <td>表内容单元格</td>
-                        <td>表内容单元格</td>
-                        <td><a href="#">操作</a></td>
-                    </tr>
-                    <tr>
-                        <td>总计：</td>
-                        <td colspan="2">1000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <table class="table" border="1">
+            <tbody>
+                <tr>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>
+                        <a href="#">操作</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>
+                        <a href="#">操作</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>
+                        <a href="#">操作</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>
+                        <a href="#">操作</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>总计：</td>
+                    <td colspan="2">1000</td>
+                </tr>
+            </tbody>
+        </table>
         <div class="import">
             <h2></h2>
         </div>
     </div>
-    <div class="body1">
+    <div class="content">
         <div class="lastmenu">
             <h1>侧栏侧栏侧栏侧栏侧栏标题</h1>
         </div>
@@ -320,7 +326,7 @@
                             <p>邮箱地址请按要求格式输入</p>
                         </div>
                         <div class="password">
-                            <label for="input2">请输入密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="input2">请输入密码:&nbsp;</label>
                             <input id="input2" type="password" placeholder="请输入密码！">
                             <br>
                             <label for="input2">请重复输入密码:&nbsp;</label>
@@ -351,11 +357,11 @@
                         <br>
                         <div class="description">
                             <label>个人描述:</label>
-                            <textarea name="description" id="description" cols="40" rows="10"></textarea>
+                            <textarea class="descript" name="description" cols="90" rows="10" placeholder="我。是。一。只。小。怪。兽"></textarea>
                         </div>
                     </tbody>
                 </table>
-                <input type="submit" value="提交按钮">
+                <input class="input" type="submit" value="提交按钮">
             </form>
         </div>
     </div>
